@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import scipy as sp
 import sklearn.ensemble as sk
-df = pd.read_csv('apl.csv')
+df = pd.read_csv('/workspaces/RandomForestRegressionSample/RandomForestSampleCode/apl.csv')
 df.dropna()
 df = df.drop('Date', axis=1)
 df = df.replace({'\$': '', ',': ''}, regex=True).astype(float)
